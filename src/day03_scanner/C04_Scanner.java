@@ -1,0 +1,42 @@
+package day03_scanner;
+
+import java.util.Scanner;
+
+public class C04_Scanner {
+
+    public static void main(String[] args) {
+
+
+        //soru3: kullanicidan ismini, soyismini ve yasini alip, asagidaki formatta yazdırın.
+        // isminiz: John
+        // soyisminiz: Doe
+        // Yasiniz: 44
+        // Kaydiniz basariyla tamamlanmistir.
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Lutfen isminizi yaziniz");
+
+        String girilenIsim = scanner.nextLine();
+
+        System.out.println("Lutfen syisminizi giriniz");
+
+        String girilenSoyisim = scanner.nextLine();
+
+        System.out.println("Lutfen yasinizi giriniz");
+
+        int girilenYas = scanner.nextInt();
+
+        /*
+        System.out.println("Isminiz :" + girilenIsim);
+        System.out.println("Soyisminiz : " + girilenSoyisim);
+        System.out.println("Yasiniz : " + girilenYas);
+        System.out.println("Kaydiniz basariyla tamamlanmistir."); */
+
+
+
+
+
+
+    }
+}
