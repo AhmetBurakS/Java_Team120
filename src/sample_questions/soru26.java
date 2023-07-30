@@ -25,7 +25,6 @@ public class soru26 {
 
         for (int i = 1; i <sayi ; i++) {
 
-            if ()
         }
     }
 }
