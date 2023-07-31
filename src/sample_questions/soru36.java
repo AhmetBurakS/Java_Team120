@@ -1,5 +1,8 @@
 package sample_questions;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class soru36 {
 
     public static void main(String[] args) {
@@ -16,6 +19,29 @@ public class soru36 {
         Arrayi kullanıcıya oluşturabilirsiniz (Öneri..)
                  */
 
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Lutfen array'in uzunlugunu tek haneli olacak sekilde giriniz");
+
+        int uzunluk = scanner.nextInt();
+
+        int[] arr = new int[uzunluk];
+
+        for (int i = 0; i < arr.length; i++) {
+            scanner = new Scanner(System.in);
+            System.out.println("Array icin element giriniz");
+            arr[i] = scanner.nextInt();
+        }
+
+        System.out.println("Array'in ortasindaki eleman: "+ortaIndexiBul(arr));
+
+
+    }
+    public static int ortaIndexiBul(int[]arr){
+
+        int ortaIndex = arr.length/2;
+
+        return arr[ortaIndex];
 
     }
 }
