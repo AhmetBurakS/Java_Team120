@@ -20,28 +20,29 @@ public class sample_questins12 {
             Sayıların toplamı: 71  veya  Fazla Yüklenme
          */
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Lutfen 2 adet tamsayi giriniz\n1 :");
-        long sayi1 = scanner.nextLong();
-        System.out.print("2 :");
-        long sayi2 = scanner.nextLong();
-        long toplam = sayi1+sayi2;
+        sayilarinToplamDegeri();
 
-        String sayi1Basamak = String.valueOf(sayi1);
-        String sayi2Basamak = String.valueOf(sayi2);
-        String basamakToplam = String.valueOf(sayi1) + String.valueOf(sayi2);
+    }
+    public static void sayilarinToplamDegeri (){
 
-        if (sayi1Basamak.length()>10 || sayi2Basamak.length()>10){
-            System.out.println("Fazla Yuklenma");
-        }else if (basamakToplam.length()>10){
-            System.out.println("Fazla Yuklenme");
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Lutfen 2 adet sayi giriniz\nsayi 1: ");
+
+        int girilenSayi1 = scan.nextInt();
+        System.out.print("sayi 2: ");
+        int girilenSayi2 = scan.nextInt();
+
+        int toplam = 0;
+
+        int basamakSayisi = (toplam+"").length();
+        int basamakSayisi2 = (girilenSayi2+"").length();
+        int basamakSayisi1 = (girilenSayi1+"").length();
+
+        if (basamakSayisi1 >10 && basamakSayisi2>10 && basamakSayisi>10){
+            System.out.println("Fazla yuklenme");
         }else{
-            System.out.println("Girilen sayilarin toplami : "+ toplam);
+            System.out.println("Girilen sayilarin toplami: "+(girilenSayi1+girilenSayi2));
         }
-
-
-
-
 
     }
 }

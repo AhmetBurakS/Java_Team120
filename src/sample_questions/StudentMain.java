@@ -1,5 +1,7 @@
 package sample_questions;
 
+import java.util.Scanner;
+
 public class StudentMain {
 
     /*
@@ -20,38 +22,20 @@ public class StudentMain {
         bızde yukarıda olusturdugumuz variable adlarını ekleyecegız.
      */
 
-    String isim = "isim belirtilmedi";
-    String soyisim = "Soyisim belirtilmedi";
-    int yas ;
-    char cinsiyet ;
-
-    @Override
-    public String toString() {
-        return "Ogrenci bilgileri==>{" +
-                "isim='" + isim + '\'' +
-                ", soyisim='" + soyisim + '\'' +
-                ", yas=" + yas +
-                ", cinsiyet=" + cinsiyet +
-                '}';
-    }
-
-    public StudentMain(String isim, String soyisim, int yas, char cinsiyet) {
-
-        this.isim = isim;
-        this.cinsiyet = cinsiyet;
-        this.yas = yas;
-        this.soyisim = soyisim;
-
-
-
-    }
-
     public static void main(String[] args) {
 
-        StudentMain ogrenci1 = new StudentMain("Ahmet Burak","Sarigul",31,'e');
+        Scanner scan= new Scanner(System.in);
+        System.out.println("Lutfen adinizi giriniz");
+        String ad = scan.nextLine();
+        System.out.println("Lutfen soyadinizi giriniz");
+        String soyad = scan.nextLine();
+        System.out.println("Lutfen yasinizi giriniz");
+        int yas = scan.nextInt();
+        System.out.println("Lutfen cinisyetinizi giriniz");
+        char cinsiyet = scan.next().charAt(0);
+
+        Student ogrenci1 = new Student(ad,soyad,yas,cinsiyet);
 
         System.out.println(ogrenci1);
     }
-
-
 }

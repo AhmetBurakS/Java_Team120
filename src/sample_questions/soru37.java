@@ -27,35 +27,26 @@ public class soru37 {
         Birbirinden farkli girilen sayilar: 1 2 3 6 4 5
          */
 
-        int[] arr = new int[10];
+        int[] arr = {1 ,2, 3, 2, 1, 6, 3, 4, 5, 2};
 
-        for (int i = 0; i < arr.length; i++) {
 
-            Scanner scan= new Scanner(System.in);
-            System.out.println("Lutfen on sayi giriniz");
-            arr[i] = scan.nextInt();
-        }
 
-        int[] yeniDizi = eliminateDuplicates(arr);
-        System.out.println("Orjinal dizi: " + Arrays.toString(arr));
-        System.out.println("Birbirinden farkli girilen sayilar: " + Arrays.toString(yeniDizi));
+
     }
+    public static int[] eliminateDuplicates(int[] list){
 
+        int[] arr = {1 ,2, 3, 2, 1, 6, 3, 4, 5, 2};
+        Scanner scanner = new Scanner(System.in);
 
-        public static int[] eliminateDuplicates(int[] list) {
+        int girilensayi = 0;
 
-            Set<Integer> tekrarsizSet = new HashSet<>();
-            for (int num : list) {
-                tekrarsizSet.add(num);
-            }
+        do {
+            System.out.println("Lutfen tamsayi giriniz");
+            girilensayi++;
 
-            int[] tekrarsizDizi = new int[tekrarsizSet.size()];
-            int index = 0;
-            for (int num : tekrarsizSet) {
-                tekrarsizDizi[index++] = num;
-            }
+        }while(girilensayi==10);
 
-            return tekrarsizDizi;
-        }
+        return arr;
+    }
 
 }

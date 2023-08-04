@@ -19,11 +19,30 @@ public class Student {
         ve tabi ki constructor parametrelı oldugu ıcın bızden parametre yazmamızı ısteycek,
         bızde yukarıda olusturdugumuz variable adlarını ekleyecegız.
      */
-    public static void main(String[] args) {
 
-        StudentMain ogrenci1 = new StudentMain("Ahmet Burak","Sarigul",31,'e');
+    String ad = "Ad belirtilmedi";
+    String soyad = "Soyad belirtilmedi";
+    int yas ;
+    char cinsiyet ;
 
-        System.out.println(ogrenci1);
 
+    Student(){
+
+    }
+    Student(String ad,String soyad, int yas, char cinsiyet){
+
+        this.ad = ad;
+        this.cinsiyet = cinsiyet;
+        this.yas = yas;
+        this.soyad = soyad;
+    }
+    @Override
+    public String toString() {
+        return "Ogrenci Bilgileri==>{" +
+                "ad='" + ad + '\'' +
+                ", soyad='" + soyad + '\'' +
+                ", yas=" + yas +
+                ", cinsiyet='" + cinsiyet + '\'' +
+                '}';
     }
 }
