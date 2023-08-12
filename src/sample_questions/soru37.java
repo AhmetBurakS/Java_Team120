@@ -27,26 +27,31 @@ public class soru37 {
         Birbirinden farkli girilen sayilar: 1 2 3 6 4 5
          */
 
-        int[] arr = {1 ,2, 3, 2, 1, 6, 3, 4, 5, 2};
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Lutfen art arda 10 tane tamsayi giriniz");
 
+        int[] arr = new int[10];
 
+        for (int i = 0; i < 10; i++) {
 
+            arr[i] = scan.nextInt();
+        }
 
+        System.out.println("Birbirinden farkli girilen sayilar: ");
+        eliminateDuplicates(arr);
     }
-    public static int[] eliminateDuplicates(int[] list){
 
-        int[] arr = {1 ,2, 3, 2, 1, 6, 3, 4, 5, 2};
-        Scanner scanner = new Scanner(System.in);
+    private static void eliminateDuplicates(int[]arr) {
 
-        int girilensayi = 0;
+            List<Integer> tekrarsizList = new ArrayList<>();
 
-        do {
-            System.out.println("Lutfen tamsayi giriniz");
-            girilensayi++;
+        for (int i = 0; i < arr.length; i++) {
 
-        }while(girilensayi==10);
-
-        return arr;
+            if (!tekrarsizList.contains(arr[i])){
+                tekrarsizList.add(arr[i]);
+            }
+        }
+        System.out.println(tekrarsizList);
     }
 
 }

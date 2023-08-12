@@ -33,13 +33,18 @@ public class soru36 {
             arr[i] = scanner.nextInt();
         }
 
-        System.out.println("Array'in ortasindaki eleman: "+ortaIndexiBul(arr));
+       ortaIndexiBul(arr);
 
 
     }
     public static int ortaIndexiBul(int[]arr){
-
         int ortaIndex = arr.length/2;
+        if (arr.length%2==0){
+            System.out.println("Array'in ortasındaki elemanlar "+arr.length/2+" ve"+(arr.length/2-1));
+
+        }else{
+            System.out.println("Array'in ortasındaki elemanlar "+arr.length/2);
+        }
 
         return arr[ortaIndex];
 

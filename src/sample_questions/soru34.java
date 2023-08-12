@@ -1,5 +1,7 @@
 package sample_questions;
 
+import java.util.Arrays;
+
 public class soru34 {
 
     public static void main(String[] args) {
@@ -16,11 +18,14 @@ public class soru34 {
                           Ardından loop yardımı ile Integer.valueOf() kullanarak toplama yapabilirsiniz
          */
 
-        String str ;
 
     }
-    public static void stringToplam(String str){
+    public static void rakamlarToplami(String metin){
+
+        int toplam = 0;
+
 
 
     }
+
 }
