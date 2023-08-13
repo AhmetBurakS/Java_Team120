@@ -29,4 +29,6 @@ public class forEachLoop03 {
         double GANO = toplam/notlar.size();
         System.out.println("Genel Akademik Not Ortalamaniz: "+GANO);
     }
+
 }
+

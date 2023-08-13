@@ -24,18 +24,19 @@ public class multiDiamensional01 {
                 {60,60},   //dorduncu ogrencinin donem notlari
                 {30,90}  // besinci ogrencinin donem notlari
         };
+
         for (int i = 0; i < sinavNotlari.length; i++) {
 
-            int ilkDonemNotu = sinavNotlari[i][0];
+            int birinciDonemNotu = sinavNotlari[i][0];
             int ikinciDonemNotu = sinavNotlari[i][1];
-            System.out.println((i+1)+" Ogrencinin notlari");
-            System.out.println("Birinci Donem Notu: "+ilkDonemNotu);
-            System.out.println("Ikıncı Donem Notu: "+ikinciDonemNotu);
+            System.out.print(i+1+". ogrencinin notlari\n");
+            System.out.println("Birinci donem notu: "+birinciDonemNotu);
+            System.out.println("Ikınci donem notu: "+ikinciDonemNotu);
 
-            double yilSonuNotu= (ikinciDonemNotu+ilkDonemNotu)/2.0;
-            System.out.println("Yil sonu ortalamasi: "+yilSonuNotu);
-            System.out.println("---------------------------------");
-
+            double AGNO = (birinciDonemNotu+ikinciDonemNotu)/2.0;
+            System.out.println("Akademik Genel Not Ortalamasi: "+AGNO);
+            System.out.println("------------------------------------");
         }
+
     }
 }
